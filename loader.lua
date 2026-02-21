@@ -20,6 +20,8 @@ if isfile("stuffnstuff/streamermode.txt") then
         for _, v in CurrentList:GetChildren() do
             Process(v);
         end;
+
+        CurrentList.ChildAdded:Connect(Process);
         
         Invite:GetPropertyChangedSignal('Visible'):Connect(function()
             if Invite.Visible then
