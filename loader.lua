@@ -1,5 +1,6 @@
 if isfile("stuffnstuff/streamermode.txt") then
     if game.PlaceId == 2008032602 then
+        --// ranked lobby streamer mode
         local Players = game:GetService("Players");
         local Player = Players.LocalPlayer;
         local PlayerGui = Player.PlayerGui;
