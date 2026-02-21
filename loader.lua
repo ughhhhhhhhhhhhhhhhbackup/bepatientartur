@@ -13,7 +13,7 @@ if isfile("stuffnstuff/streamermode.txt") then
         local function Process(Frame)
             if Frame:IsA('Frame') and Frame:WaitForChild('MemberName') then
                 local MemberName = Frame:WaitForChild('MemberName');
-                MemberName.Text = '.gg/asu';
+                MemberName.Text = '.gg/cWh43mFDms';
             end;
         end;
         
@@ -25,7 +25,7 @@ if isfile("stuffnstuff/streamermode.txt") then
         
         Invite:GetPropertyChangedSignal('Visible'):Connect(function()
             if Invite.Visible then
-                Invite:FindFirstChild('From').Text = '.gg/asu';
+                Invite:FindFirstChild('From').Text = '.gg/cWh43mFDms';
             end;
         end);
     end;
