@@ -1,5 +1,5 @@
-if isfile("stuffnstuff/streamermode.txt") then
-    if game.PlaceId == 2008032602 then
+if game.PlaceId == 2008032602 then --//  isfile("stuffnstuff/streamermode.txt")
+    if isfile("stuffnstuff/streamermode.txt") then
         --// ranked lobby streamer mode
         local Players = game:GetService("Players");
         local Player = Players.LocalPlayer;
@@ -34,4 +34,6 @@ queue_on_teleport([[
   loadstring(game:HttpGet('https://raw.githubusercontent.com/ughhhhhhhhhhhhhhhhbackup/bepatientartur/refs/heads/main/loader.lua'))();
 ]])
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ughhhhhhhhhhhhhhhhbackup/bepatientartur/refs/heads/main/main.lua'))();
+if game.PlaceId == 1458767429 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ughhhhhhhhhhhhhhhhbackup/bepatientartur/refs/heads/main/main.lua'))();
+end;
