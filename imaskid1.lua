@@ -1,4 +1,8 @@
-return function(UserInputService, ContextActionService, INPUT_PRIORITY)
+local UserInputService = game:GetService('UserInputService');
+local ContextActionService = game:GetService('ContextActionService');
+local INPUT_PRIORITY = Enum.ContextActionPriority.High.Value;
+
+return function()
 
     local keyboard = {
         W = 0, A = 0, S = 0, D = 0,
